@@ -60,7 +60,7 @@ After either **Set up for the first time** or **Create a new workstream vault**,
 
 > **What do you want to name your Vault?**
 
-Use the platform's native text input when available. Field label: **Vault name**. Optional placeholder: **Enter a Vault name**. Wait for a non-empty name; then ask the second question.
+Use the platform's native text input when available. Field label: **Vault name**. Optional placeholder: **Enter a Vault name**. Use a filename-safe name under the selected OS guide and avoid brackets or `#` in generated note filenames so wikilinks remain unambiguous on either OS. Explain any needed display-name/filename distinction. Wait for a non-empty name; then ask the second question.
 
 **2. Ask for the save location**
 

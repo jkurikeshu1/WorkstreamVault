@@ -6,7 +6,7 @@ This is the complete agent procedure for an authorized setup of the supplied sta
 
 Determine where the files will be saved. Read [WINDOWS.md](WINDOWS.md) for a Windows target or [MACOS.md](MACOS.md) for a Mac target before file operations. Use the same full procedure below on either OS; the native path/file handling changes, not the features or required evidence. A remote agent must verify access to that actual target. Do not require Windows users to install a Unix shell, WSL or Git Bash, or execute a macOS-only command there.
 
-Use native file tools when possible. Preserve all template files including `.obsidian`, UTF-8 text, vault-relative `/` routes and Unicode names. Parse/update/serialize JSON instead of inserting raw machine paths; Windows absolute paths need correct backslash escaping in JSON. Validate path/name rules on the target OS, and avoid case-only duplicate notes on either platform.
+Use native file tools when possible. Preserve all template files including `.obsidian`, UTF-8 text, vault-relative `/` routes and Unicode names. Parse/update/serialize JSON instead of inserting raw machine paths; Windows absolute paths need correct backslash escaping in JSON. Validate path/name rules on the target OS, avoid brackets and `#` in generated note filenames so wikilinks stay unambiguous, and avoid case-only duplicate notes on either platform.
 
 ## 1. Verify scope and destination
 
