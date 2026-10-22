@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "kind": "declarative-shared-context-guidance",
+  "projectId": "",
+  "contextRevision": "",
+  "protocolRevision": 2,
+  "canonicalRoot": ".",
+  "bootstrapPath": "{{Project Name}}.md",
+  "contractPath": "AGENTS.md",
+  "projectOwner": "",
+  "contextOwner": "",
+  "gitRepository": false,
+  "repository": {
+    "root": "",
+    "expectedOrigin": null,
+    "entryContract": "AGENTS.md",
+    "verifyAssignedWorktree": true,
+    "notIncludedInVaultOnlyPack": true
+  },
+  "currentSourcePaths": [
+    "AGENTS.md",
+    "{{Project Name}}.md",
+    "Current State.md",
+    "Architecture/Architecture Guardrails.md",
+    "Jobs/Onboard an Agent.md",
+    "Reference/Shared Context.md",
+    "Reference/Conventions & Dev Workflow.md"
+  ],
+  "routing": {
+    "scope": "",
+    "requiredSourcesNeverTruncated": true,
+    "explicitRequiredDependenciesMustBeAdmitted": true,
+    "denyByDefault": [
+      "credentials and secret values",
+      "unrelated private records",
+      "raw communications and agent histories",
+      "historical snapshots unless explicitly required",
+      "unrelated projects",
+      "live application data unless explicitly assigned"
+    ]
+  },
+  "execution": {
+    "mode": "default",
+    "status": "unassigned",
+    "scope": "",
+    "stop": ""
+  },
+  "capabilities": {
+    "declarativeOnly": true,
+    "contextProfile": "context-profile.json",
+    "contextProfileStatus": "unconfigured",
+    "providerQualification": "not_assessed",
+    "globalRollout": false,
+    "liveRecorder": false,
+    "automaticGrantEnforcement": false,
+    "durableJournalAcknowledgment": false
+  },
+  "limits": "Declarative guidance only. These files do not authenticate authority or enforce permissions. Verify actual sources, access and current human scope separately."
+}

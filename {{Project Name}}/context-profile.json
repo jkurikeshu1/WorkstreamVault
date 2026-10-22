@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "operatorReviewed": false,
+  "projectId": "",
+  "policyVersion": "",
+  "approvedRevision": null,
+  "orientation": {
+    "goal": "",
+    "user": "",
+    "architecture": "",
+    "constraints": [
+      "Orientation only; separately verify authority, repository identity and all actual assignment dependencies.",
+      "Required sources must be read completely; optional tags and budgets never justify silent omission.",
+      "No automatic provider loading, recorder, permission enforcement or tool qualification is claimed."
+    ],
+    "rationale": ""
+  },
+  "sources": [
+    {
+      "id": "entry",
+      "path": "AGENTS.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "map",
+      "path": "{{Project Name}}.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "background",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "state",
+      "path": "Current State.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "evidence",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "identity",
+      "path": "project-context.json",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "evidence",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "rules",
+      "path": "Architecture/Architecture Guardrails.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "onboard",
+      "path": "Jobs/Onboard an Agent.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "context",
+      "path": "Reference/Shared Context.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "workflow",
+      "path": "Reference/Conventions & Dev Workflow.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "maintenance",
+      "path": "Jobs/Update the Vault.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": false,
+      "tags": [
+        "implementation"
+      ],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "parallel",
+      "path": "Jobs/Parallel Workflow.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": false,
+      "tags": [
+        "implementation"
+      ],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "plans",
+      "path": "Proposed Plans/Proposed Plans.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "evidence",
+      "status": "unreviewed",
+      "required": false,
+      "tags": [
+        "planning"
+      ],
+      "dependencies": [
+        "plan-review"
+      ],
+      "revision": null
+    },
+    {
+      "id": "plan-review",
+      "path": "Jobs/Propose or Review a Plan.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": false,
+      "tags": [
+        "planning"
+      ],
+      "dependencies": [],
+      "revision": null
+    },
+    {
+      "id": "setup",
+      "path": "Jobs/Create or Adapt a Project Vault.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": false,
+      "tags": [
+        "setup"
+      ],
+      "dependencies": [
+        "plan-review"
+      ],
+      "revision": null
+    }
+  ],
+  "limits": {
+    "maxFileBytes": 1048576,
+    "maxReadBytes": 8388608,
+    "maxPackBytes": 524288,
+    "optionalBytes": 16384
+  }
+}
