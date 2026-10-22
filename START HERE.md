@@ -6,10 +6,17 @@ This package contains a blank Obsidian vault and setup instructions for your own
 
 The `{{Project Name}}` folder is the vault. It works as plain folders, Markdown and JSON. **Obsidian is optional**; no download or installation is needed. A file-capable agent can read the same entry contracts and maintain the notes without it. This guide also supports manual setup and explains every configuration field.
 
+## Use the guide for your computer
+
+- **Windows:** follow [WINDOWS.md](WINDOWS.md). Use Windows file tools or PowerShell; no Mac commands, WSL or Git Bash are needed.
+- **Mac:** follow [MACOS.md](MACOS.md). Its shell examples and Library/Application Support location are macOS-only.
+
+Both platforms use the same action menu, name/save-location questions, complete template, metadata, setup-record fields, workstream/onboarding checks and completion report. Only native paths, registry location and file-operation syntax differ. Determine the computer where files will actually be saved before choosing a guide.
+
 ## Setup checklist
 
-1. **Copy the inner folder** to one chosen home for your work. Check for existing files first; do not merge over another vault. Keep an existing canonical repository or vault where it already belongs. A code repository is optional.
-2. **Choose a project name and owner.** Rename the `{{Project Name}}` folder and its `{{Project Name}}.md` file to that name. Use a filename-safe name without `/`, `\`, brackets or `#`. Use that same spelling everywhere.
+1. **Choose the final destination, then copy the entire inner template** there, including `.obsidian`; preserve the original blank template. The agent asks for the name and final save location in README's order. Check for existing files first; do not merge over another vault or nest the name twice. Keep an existing canonical repository or vault where it already belongs. A code repository is optional.
+2. **Set the project name and owner.** Rename the destination's `{{Project Name}}.md` map to the selected valid project filename. Use the selected OS guide's filename rules, avoid case-only duplicate notes, and keep the resulting map name and its routes consistent. Do not treat a Windows drive colon as part of a filename.
 3. **Replace placeholders in text and filenames.** Search all Markdown and JSON files for `{{...}}`. Set `{{Project Name}}`, `{{Owner}}`, `{{Vault Path}}` and, if applicable, `{{Repo Path}}`. `{{Vault Path}}` means the absolute path of the inner folder you just copied. There is no automatic placeholder replacement. Leave `{{date:YYYY-MM-DD}}` only in `Templates/Daily Note.md`; Obsidian's built-in Templates command expands it when used; a folder-only agent replaces it with the actual date when creating a daily note. The JSON files contain empty identity strings as well as placeholders; complete the fields listed below.
 4. **Set the JSON identity and local rules.** Choose a stable project ID, such as `project-notes`, and your own initial revision, such as `local-1`. Keep `project-context.json.contextRevision` and `context-profile.json.policyVersion` equal. Review the conventions, guardrails and Jobs with the named owner. These are proposed starting rules for your adoption, not an inherited approval.
 5. **Handle the optional repository.** If there is no repository, leave `repository.root` empty and `expectedOrigin` null, and replace every `{{Repo Path}}` placeholder with `Not applicable — no repository`. Keep `gitRepository` false for a non-Git vault. If there is a repository, set its absolute path, verify its actual instructions separately and name its base branch and meaningful checks in Conventions. Do not create an empty repository just for this vault.
@@ -22,7 +29,7 @@ A successful first run means the agent found the right workstream and sources, u
 
 ## What to set in project-context.json
 
-JSON does not permit comments. This table supplies the field explanations. All paths inside the vault use `/` and are relative unless explicitly marked absolute. Empty identity fields intentionally prevent the starter from claiming to be a configured project.
+JSON does not permit comments. This table supplies the field explanations. Vault-relative routes use `/` on Windows and Mac and are resolved against the actual root through native file/path tools. Absolute machine paths use the target OS's syntax. Update JSON through a parser/serializer so Windows backslashes are escaped correctly; do not paste them into raw JSON strings. Empty identity fields intentionally prevent the starter from claiming to be a configured project.
 
 | Field | Action / meaning |
 | --- | --- |
@@ -88,6 +95,6 @@ The operating cycle is: read → establish authority → claim when editing → 
 
 ## Included and intentionally empty
 
-The package contains a root README and agent entry, an agent-led setup procedure, this field guide, inner-vault entry and onboarding instructions, an empty coordination board, the required Jobs, workstream and plan templates, reference notes, unconfigured JSON catalogs, and minimal built-in Obsidian settings.
+The package contains a root README and agent entry, separate Windows/Mac guides, an agent-led setup procedure, this field guide, inner-vault entry and onboarding instructions, an empty coordination board, the required Jobs, workstream and plan templates, reference notes, unconfigured JSON catalogs, and minimal built-in Obsidian settings.
 
 Identity fields, approvals, claims, locks, plan registries, decisions and dated history remain empty until your own work needs them. No community plugins, application code, accounts or runtime services are included.

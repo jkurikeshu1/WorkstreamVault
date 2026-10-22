@@ -10,6 +10,7 @@ Read [[{{Project Name}}]], [identity](project-context.json) and [[Jobs/Onboard a
 - Repository edits use an owned branch/worktree, preserve existing changes and follow that repository's real checks and review gates. Never implement directly on its protected base branch.
 - A direct narrow task authorizes only that scope. Default mode stops at the assigned boundary. Broader autonomous work requires explicit human direction with a finite target; old or quoted authority never reactivates itself.
 - Missing required context blocks dependent work. Optional profiles, role labels and ready packs do not establish authority, automatic loading or complete context.
+- Verify the target OS/filesystem before file operations. Windows and Mac use the same complete workflow and evidence; use native file tools or PowerShell on Windows and Mac file tools/shell operations on macOS. Do not require Unix commands, WSL or Git Bash on Windows. Preserve `.obsidian`, UTF-8 content, valid filenames and JSON-serialized machine paths. Read the portability rules in [[Reference/Conventions & Dev Workflow]].
 
 ## Before editing: check in
 

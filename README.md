@@ -2,6 +2,19 @@
 
 This package is a reusable starter for **workstream vaults**: folders of Markdown notes and JSON files that help a person and their agents coordinate project work. **Obsidian is optional.** A file-capable agent and a text editor are enough.
 
+## Choose the target operating system
+
+The template is plain Markdown/JSON and has no required Unix installer. **Windows and macOS use the same complete workflow and create the same vault structure.** Select instructions for the computer where files will actually be saved, even when the agent's chat interface or execution host is elsewhere:
+
+| Target computer | Instructions | Native operations |
+| --- | --- | --- |
+| **Windows** | [Windows setup — WINDOWS.md](WINDOWS.md) | Windows file APIs or PowerShell; Windows path validation and local-application-data setup record. No WSL, Git Bash or Unix utilities required. |
+| **macOS / Mac** | [Mac setup — MACOS.md](MACOS.md) | Mac file APIs or the actual macOS shell; Mac paths and Library/Application Support setup record. Mac shell examples are for Mac only. |
+
+The agent determines the actual target OS/shell from available environment information before performing file operations, and reads the matching guide. Ask which computer is the target only if genuinely unclear. On Windows, never execute a Mac shell example or silently use a Linux/WSL path. If Linux/WSL is explicitly the target, use its real environment and the existing Linux record convention; do not pretend it is native Windows or macOS.
+
+**Required parity on both Windows and Mac:** the same four-action menu; the exact name-then-save-location prompts; retained blank template; complete destination scaffold including `.obsidian`; project identity/catalog configuration; returning-user record handling; workstream/onboarding and ambiguity-framework checks; handoff and created-files report; optional Obsidian viewing. Native paths, the record's OS-specific location and any shell syntax are the only platform-specific adaptations. Do not omit a feature because the target is Windows. These are documentation requirements, not a claim that every agent/client has been runtime-tested on both operating systems.
+
 ## First contact: show an action menu
 
 If the user gives only this package's folder path, read the entry/setup instructions and present the action menu below. That menu establishes intent; a path alone does not authorize scaffolding. Do not end with a generic “set it up, review it, or make changes?” paragraph when the platform can show a structured question.
@@ -84,7 +97,7 @@ This is an instruction-driven setup, not an executable installer. Reading this f
 
 ## Agent entry and procedure order
 
-Read this README, [AGENTS.md](AGENTS.md) and [SETUP.md](SETUP.md) completely. Use this README's route selection, explicit vault naming, returning-user lookup and reusable-template rules before applying SETUP.md's identity/configuration, verification and handoff steps to the chosen target.
+Read this README, [AGENTS.md](AGENTS.md), the target computer's [Windows](WINDOWS.md) or [macOS](MACOS.md) guide, and [SETUP.md](SETUP.md) completely. Use this README's route selection, explicit vault naming, returning-user lookup and reusable-template rules before applying SETUP.md's identity/configuration, verification and handoff steps to the chosen target. Use native operations from the selected OS guide throughout.
 
 This README makes the following setup distinctions explicit:
 
@@ -197,8 +210,10 @@ For authorized project work, follow the selected vault's current state, guardrai
 ## Files in this package
 
 - [AGENTS.md](AGENTS.md) — package entry and scope boundaries.
+- [WINDOWS.md](WINDOWS.md) — complete Windows workflow, PowerShell/file handling, Windows paths and setup-record location; same features as Mac.
+- [MACOS.md](MACOS.md) — complete macOS workflow, Mac shell/file handling, Mac paths and setup-record location; same features as Windows.
 - [SETUP.md](SETUP.md) — field configuration, operating-context reads, verification and handoff steps, applied to the target selected here.
 - [START HERE.md](<START HERE.md>) — manual setup and complete JSON field reference. For the reusable multi-vault workflow, preserve the original template as directed here.
 - `{{Project Name}}/` — the blank template used to create new workstream vaults.
 
-This README is the only changed package file for the guided first-time/returning-user flow. It contains instructions for future authorized setup; it does not itself execute, create a setup record, install software or force an agent to load it. No executable or additional packaged file is required.
+The package contains documentation, templates and minimal Obsidian settings. It contains instructions for future authorized setup; opening it does not itself execute, create a setup record, install software or force an agent to load it. The Windows and macOS guides are documentation, not executable installers.

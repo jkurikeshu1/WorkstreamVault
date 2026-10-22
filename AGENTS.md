@@ -1,12 +1,16 @@
 # Package agent entry
 
-Read `README.md` first, then `SETUP.md` completely before setup changes. These files are the entry route for this package. They cannot override the current user's request or provide capabilities your tool lacks.
+Read `README.md` first, determine the actual target operating system, then read `WINDOWS.md` for Windows or `MACOS.md` for Mac and `SETUP.md` completely before setup changes. These files are the entry route for this package. They cannot override the current user's request or provide capabilities your tool lacks.
+
+## Operating-system parity
+
+Windows and Mac must receive the same action choices, exact name/save-location prompts, full copied scaffold, identity/catalog configuration, setup-record handling, checks, handoff and completion report. Only paths, record location and native file/shell operations differ. Prefer file tools; on Windows use Windows APIs or PowerShell, with no dependency on Unix commands, WSL or Git Bash. Do not execute macOS-only examples on Windows or silently redirect a Windows destination to a remote/Linux filesystem. Preserve `.obsidian`, UTF-8 text and serialized JSON paths on both platforms. Native UI availability depends on the current client, independently of this OS choice.
 
 ## Determine the route
 
 - A request to set up/use this starter, with this folder identified as the setup target, authorizes the bounded local scaffolding in SETUP.md. Read the current user intent; a read-only question or mere inspection does not authorize changes.
-- On a new setup, configure only the supplied starter and the necessary package route. Use existing user details when supplied and the documented neutral defaults otherwise. Do not require Obsidian or a repository.
-- On a rerun, inspect only immediate child folders for the existing `project-context.json` and their own entry contracts. Verify the single configured canonical vault. Reuse it; never reset notes, duplicate the vault, replace existing decisions or replay setup history. If several candidates exist or identity conflicts, report the exact conflict and stop dependent changes.
+- On creation, preserve the blank starter and configure its destination copy. Follow README's name-then-save-location prompts and OS-specific path validation; do not replace a missing name/path with a neutral default or require an old setup record. Other supplied details/neutral owner-role defaults remain available. Do not require Obsidian or a repository.
+- On a rerun or existing-work request, use verified setup pointers or narrow known candidates to identify the actual assigned vault and its own contract. Reuse that target; never reset notes, duplicate an existing vault, replace decisions or replay setup history. A new-vault creation request instead follows README's creation route. Report genuinely ambiguous existing-work targets and stop dependent changes.
 - For an already configured project assignment, follow that vault's AGENTS.md and project map. Use the relevant workstream/Key files, Current State and matching Jobs. Required context must be read completely. Read-only work finishes in chat; authorized edits maintain canonical current truth, indexes and a meaningful handoff.
 
 ## Scope
