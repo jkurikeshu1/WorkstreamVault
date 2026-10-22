@@ -47,7 +47,7 @@ The complete field reference is in START HERE.md. The profile is optional routin
 
 ## 4. Read and adopt the operating route for this assignment
 
-Read the renamed map, inner AGENTS.md, Current State, Architecture/Architecture Guardrails, Jobs/Onboard an Agent, Jobs/Create or Adapt a Project Vault, Jobs/Update the Vault, Reference/Conventions & Dev Workflow and Reference/Shared Context. Follow their required dependencies completely. Read the plan Job and template to verify the architecture-ambiguity framework is connected; do not create a proposed plan just to set up the vault.
+Read the renamed map, inner AGENTS.md, Current State, Architecture/Architecture Guardrails, Jobs/Onboard an Agent, Jobs/Create or Adapt a Project Vault, Jobs/Update the Vault, Reference/Workstream Routing, Reference/Conventions & Dev Workflow and Reference/Shared Context. Follow their required dependencies completely. Read the plan Job and template to verify the architecture-ambiguity framework is connected; do not create a proposed plan just to set up the vault.
 
 Now establish the scoped setup claim/necessary check-in under the configured contract before further operational note edits. A shared-state lock is unnecessary unless an actual shared resource needs one. Do not change a separate code repository or launch its runtime. Treat new project-specific policy choices as requiring the owner's actual direction; setup does not mark them approved.
 
@@ -55,7 +55,9 @@ Now establish the scoped setup claim/necessary check-in under the configured con
 
 If the user supplied real work, create its clearly named note from Templates/Workstream Note.md and fill only known facts. Record unknowns honestly. If no work was supplied, create **Vault Setup** for this actual setup activity: configure entry/routing, verify the scaffold, and hand back a ready project workspace. This is actual setup work, not a fictional business project.
 
-Include purpose, accountable owner role, observed state, boundaries, relevant invariants, actual inputs/outputs, failure/permission behavior, finite acceptance/stop, next action and exact Key files. Add its row to Workstreams/Workstreams.md; keep the root map linking only the Workstreams index. Do not invent plans, approvals, decisions, prior sessions or results.
+Include purpose, accountable owner role, observed state, boundaries, relevant invariants, actual inputs/outputs, failure/permission behavior, finite acceptance/stop, next action and exact Key files. Assign a stable `workstream_id` and set `canonical_vault_id` to this vault's `projectId` in the new note, then use the same ID in its Workstreams/Workstreams.md row. Keep the root map linking only the Workstreams index. Register verified discovery routes under Reference/Workstream Routing where within setup scope; a separate repository's entry file needs its own write authority and can remain pending. Do not invent plans, approvals, decisions, prior sessions or results.
+
+After the setup result, offer Jobs/Index an Existing Workstream for prior context if relevant. Use its link-default/optional history-copy choices only when intake is requested. Do not import personal sources, populate an archive or create entry pointers outside scope merely to complete a blank scaffold.
 
 For the setup workstream, acceptance is successful identity/link/JSON and entry-route checks. Its stop is returning the verified vault and waiting for the user's first real project assignment. Update Current State only with actual setup status; keep claims/locks separate from workstream descriptions.
 
@@ -64,6 +66,7 @@ For the setup workstream, acceptance is successful identity/link/JSON and entry-
 - Parse both JSON documents; project IDs and local revision/policy values agree.
 - Resolve every currentSourcePaths and catalog path; source IDs and dependencies exist. Paths outside the optional vault-rooted catalog remain separate required reads.
 - Check all local note links after renaming, including the map, Jobs, workstreams, references and templates. Standard wikilinks refer to Markdown notes; resolve them as file routes even without Obsidian.
+- Verify the actual first workstream's stable ID/vault ID, index row and any saved registry/entry pointer. Leave generic template IDs null; distinguish verified routes from pending installation. History archives are absent unless selected for a real intake and never baseline context sources.
 - Confirm the same complete scaffold on Windows and Mac, including `.obsidian` settings; validate target-native paths, generated filename safety, UTF-8 text and round-tripping of machine paths through the JSON serializer.
 - Ensure no setup identity/path placeholders remain in operational files. The built-in date token may remain only in the Daily Note template. Package guide examples can retain generic placeholders.
 - Confirm entry contract, plan Job and proposal template all require decision boundary, plausible agent drift, explicit direction/section, owner/verification and resolved/deferred/needs-decision status. There must be no consequential unresolved choice inside a claimed implementation-ready architectural increment.

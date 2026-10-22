@@ -161,6 +161,24 @@
       "revision": null
     },
     {
+      "id": "routing",
+      "path": "Reference/Workstream Routing.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": true,
+      "tags": [],
+      "dependencies": [],
+      "revision": null
+    },
+    {
       "id": "maintenance",
       "path": "Jobs/Update the Vault.md",
       "projectId": "",
@@ -261,6 +279,29 @@
       ],
       "dependencies": [
         "plan-review"
+      ],
+      "revision": null
+    },
+    {
+      "id": "index-workstream",
+      "path": "Jobs/Index an Existing Workstream.md",
+      "projectId": "",
+      "roles": [
+        "contributor",
+        "reviewer",
+        "planner"
+      ],
+      "classification": "current",
+      "sensitivity": "internal",
+      "kind": "policy",
+      "status": "unreviewed",
+      "required": false,
+      "tags": [
+        "indexing"
+      ],
+      "dependencies": [
+        "routing",
+        "maintenance"
       ],
       "revision": null
     }

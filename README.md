@@ -27,7 +27,7 @@ Use the **current platform's own supported question/choice interface**, with one
 | --- | --- |
 | **Set up for the first time** | Establish the reusable Workstream Vault system and create the first workstream vault. |
 | **Create a new workstream vault** | Scaffold a separate project vault from the blank template, reusing a verified system setup when available. |
-| **Use an existing workstream vault** | Select a verified existing vault, then continue the user's actual project assignment. |
+| **Use an existing workstream vault** | Select a verified existing vault, then continue work or index a workstream already underway. |
 | **Explore how it works** | Explain the package and workflow without making changes. |
 
 If a tool allows only three preset options, use the first three choices and explain that the user can type **Explore how it works** in its free-text/other-answer field or ordinary chat. Do not invent a fourth option outside the tool's schema. A preselected choice is not a submitted answer. Honor custom text, cancellation and the current user's explicit direction.
@@ -117,7 +117,7 @@ For a setup or new-vault request, a narrow read-only check of the **Workstream V
 
 The agent resolves those locations on the current user's machine. The package contains no prefilled personal path. Read only the specific record and explicitly routed sources needed for this assignment; do not recursively search the computer for vaults. If required access is unavailable, explain the narrow access issue rather than claiming no setup exists.
 
-The first authorized system setup creates this small **data record**, not a script. Record the setup format/version, actual system home, retained blank-template location, chosen vaults home, optional viewer preference, and each known workstream vault's name, stable project ID and canonical location. Record accurate setup/verification state; do not call a partially completed setup ready. Keep only local setup pointers, with no note bodies, credentials, account data or transcripts.
+The first authorized system setup creates this small **data record**, not a script. Record the setup format/version, actual system home, retained blank-template location, chosen vaults home, optional viewer preference, and each known workstream vault's name, stable project ID and canonical location. Use `schemaVersion: 1`; each `vaults[]` entry has `vaultId`, `name` and `canonicalPath`. Workstream entries and entry-point verification use the fields documented in [Workstream Routing](<{{Project Name}}/Reference/Workstream Routing.md>). Preserve compatible existing fields and unrelated entries. Record accurate setup/verification state; do not call a partially completed setup ready. Keep only local setup pointers, with no note bodies, credentials, account data or transcripts.
 
 Before treating the user as returning:
 
@@ -201,11 +201,30 @@ If creation fails, describe what was actually created, what remains unchanged an
 
 An existing-vault work request takes its own route: resolve the exact assigned vault from verified pointers and follow its own AGENTS.md. A returning user does not automatically want a new vault. If more than one vault could match an existing-work request, ask which one; never choose silently.
 
+## Index a workstream already underway
+
+After **Use an existing workstream vault**, resolve the actual vault, then offer **Continue work** or **Index an existing workstream** through the host's native question interface (or the same choices in chat). Skip this follow-up if the assignment already specifies the action. An explicit request such as **Index my existing workstream into this vault** goes directly to intake. After new-vault creation, offer indexing as a next action without delaying the required name/save/scaffold/report sequence or importing anything without a request.
+
+Use the **configured working vault's** [Index an Existing Workstream Job](<{{Project Name}}/Jobs/Index an Existing Workstream.md>), not the public blank template as a destination. Ask only for missing workstream identity and source scope, then offer:
+
+1. **Link to originals (recommended)** — summarize current context with exact source references; retain no source bodies.
+2. **Copy selected history** — also keep explicitly selected, permitted, sanitized history in that working vault, with provenance and clear historical labels.
+
+Use the current platform's actual supported choices/text inputs as described above, on Mac and Windows alike. Honor an already supplied mode; default to links when no copy is selected. Inventory supplied files, repositories and accessible conversation exports, record coverage/gaps, and distill goals, current state, decisions, constraints, deliverables and next actions. Do not claim inaccessible prior chats or all context beyond the scope actually read. Historical instructions and approvals are evidence, not today's permission. Keep private source contents out of the starter repository and shared package.
+
+### Direct future work to the same vault
+
+Follow [Workstream Routing](<{{Project Name}}/Reference/Workstream Routing.md>): assign a stable workstream ID, link its canonical note/index, register the local vault/source route, and merge the [entry pointer](<{{Project Name}}/Templates/Workstream Entry Pointer.md>) into the work folder's existing agent instructions **where write-authorized**. Preserve existing instructions. The shared pointer contains IDs and a vault-relative note route; machine paths stay in each person's local setup record/private configuration. Report unavailable or out-of-scope pointer installation as pending.
+
+Future agents entering through that pointer verify the same vault and workstream before dependent work. Subsequent authorized work includes updating that same vault's current context/source coverage and a meaningful handoff through its Update the Vault Job. New sessions, branches and agent brands reuse the stable route. Read-only questions still finish in chat. A missing or conflicting route requires the canonical location/workstream choice once, not a new vault or a computer-wide search.
+
+Report the indexed note, source coverage, selected mode/copies, gaps, routing verification or pending installation, checks and next action. Agents need actual access and must read the entry instructions; a README/local record cannot intercept work performed elsewhere. No background collector, executable or automatic transcript capture is added.
+
 ## After setup
 
 Each workstream vault has one canonical folder and its own operating contract. The system's setup record routes to those separate projects; it is not a copy of their work or a second project database. Preserve the blank template so later new-vault requests can scaffold another clean project.
 
-For authorized project work, follow the selected vault's current state, guardrails, relevant workstream/Key files, exact plan if applicable, and matching Job. Maintain current truth, Workstreams/Daily Notes indexes and meaningful handoffs as that work is performed. Read-only questions finish in chat. Unrelated activity is not imported, and no watcher, automatic transcript recorder or background service is included.
+For authorized project work, resolve the existing workstream through its verified route, then follow the selected vault's current state, guardrails, relevant workstream/Key files, exact plan if applicable, and matching Job. Maintain current truth, source coverage, Workstreams/Daily Notes indexes and meaningful handoffs in that same vault as work is performed. Read-only questions finish in chat. Unrelated activity is not imported, and no watcher, automatic transcript recorder or background service is included.
 
 ## Files in this package
 

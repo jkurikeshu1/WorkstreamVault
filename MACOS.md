@@ -39,6 +39,14 @@ Perform the entire SETUP.md procedure on the destination copy. Both platforms cr
 
 Perform the same JSON/identity, routes, links, placeholder, architecture-ambiguity, complete-copy and read-only onboarding checks. Save the meaningful setup handoff, release ownership and report the actual created files, final location, checks, registration status and starting note. A successful command alone does not prove setup is complete.
 
+## Index prior work and keep future work routed — same on both OSs
+
+Choose **Use an existing workstream vault → Index an existing workstream**, or explicitly ask to index into a newly created working vault. Follow that vault's **Jobs/Index an Existing Workstream.md** and **Reference/Workstream Routing.md**. Both platforms inventory the same source scope, default to links or retain selected sanitized history copies, record provenance/gaps, use stable workstream/vault IDs, and update the same canonical context on subsequent authorized work. The archive is not required onboarding context.
+
+On this Mac use native file tools or properly quoted macOS operations for authorized source reads/copies and entry-pointer edits. Register verified local routes in this Mac's Application Support setup.json with a JSON serializer. Use vault-relative `/` note routes and IDs in portable entry pointers. Preserve source originals and existing instructions; report unavailable or out-of-scope pointer installation as pending. Do not copy private history into the public template repository. No background capture is installed.
+
+Verify source coverage, copy provenance when selected, ID/index/record/pointer agreement, saved-file readback and a follow-up route into the same vault. Report actual results. These are the same checks required on Windows, with Mac-native path handling only.
+
 ## Optional Obsidian on macOS
 
 After scaffolding, select the **Mac** download from the [official download page](https://obsidian.md/download) if wanted and follow its macOS installation flow. Open Obsidian, choose **Open folder as vault → Open**, select the created workstream vault folder, then click **Open**. Open its project-name map, Current State and Workstreams. Use **Open another vault** if another vault is already open. [Official opening instructions](https://obsidian.md/help/vault).

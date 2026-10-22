@@ -1,6 +1,21 @@
+---
+workstream_id: null
+canonical_vault_id: null
+---
+
 # Workstream Name
 
 Part of [[Workstreams/Workstreams]]. Copy to `Workstreams/<clear outcome name>.md` only for real work, rename the title, and replace these prompts. This note is a contract/source route; live claims stay in [[Current State]].
+
+## Identity and future-work route
+
+During real setup/intake, replace the null IDs with a unique stable workstream ID and this vault's configured `projectId`. Keep them stable across renames, branches and agent sessions. Register the note through [[Reference/Workstream Routing]].
+
+- Recognized aliases / exact source boundary:
+- Local registration: pending until saved and verified.
+- Source-folder entry pointer: pending until installed and verified; name the actual entry file or explain why unavailable.
+
+Future authorized work uses this same canonical note and updates its context/source coverage at completion. Read-only requests finish in chat. A pointer is discovery, not new task permission.
 
 ## Purpose and outcome
 
@@ -43,6 +58,15 @@ List exact accessible paths/links and what each proves. Repository paths belong 
 - Inputs / interfaces:
 - Verification / acceptance:
 - Required dependencies:
+
+## Previous context and source coverage
+
+For existing work, follow [[Jobs/Index an Existing Workstream]]. Record selected mode (**Link to originals** by default, or explicitly selected **Copy selected history**), intake scope/checkpoint and remaining gaps. Leave this empty until real sources are indexed. Do not claim all prior context was read beyond the documented accessible scope.
+
+| Source ID | Exact original location / citation | Date / revision / fingerprint | Coverage and read extent | Status | Retained copy / provenance, if selected |
+| --- | --- | --- | --- | --- | --- |
+
+Use Read, Partial, Unavailable, Excluded or Duplicate. Reuse source IDs and skip unchanged versions on reruns. Link a separate ledger here only when the inventory needs one. Copies belong under `Reference/Workstream History/<workstream-id>/` in the private working vault; they are historical evidence, excluded from baseline reads. Preserve originals and record redaction categories without secret values. Add newly used sources during subsequent authorized work.
 
 ## Handoff route
 

@@ -59,6 +59,14 @@ The agent must perform the full SETUP.md procedure on the destination copy: conf
 
 Then verify JSON, identity/revision agreement, source/dependency routes, local links, required ambiguity framework, name/path replacement, complete file copying, and a read-only onboarding pass. Record the actual authorized handoff and release setup ownership. Report the Vault name, final Windows path, files created, checks, setup-record status, starting note and next action. Do not replace any of those steps with a reduced Windows-only scaffold.
 
+## Index prior work and keep future work routed — same on both OSs
+
+Choose **Use an existing workstream vault → Index an existing workstream**, or explicitly ask to index into a newly created working vault. Follow that vault's **Jobs/Index an Existing Workstream.md** and **Reference/Workstream Routing.md**. Both platforms inventory the same source scope, default to links or retain selected sanitized history copies, record provenance/gaps, use stable workstream/vault IDs, and update the same canonical context on subsequent authorized work. The archive is not required onboarding context.
+
+On Windows use native file tools or PowerShell literal-path operations for authorized source reads/copies and entry-pointer edits; no Unix utilities, WSL or Git Bash are required. Register verified local routes in this Windows user's LocalApplicationData setup.json with a JSON serializer and UTF-8 output. Use vault-relative `/` note routes and IDs in portable entry pointers. Preserve source originals and existing instructions; report unavailable or out-of-scope pointer installation as pending. Do not copy private history into the public template repository. No background capture is installed.
+
+Verify source coverage, copy provenance when selected, ID/index/record/pointer agreement, saved-file readback and a follow-up route into the same vault. Report actual results. These are the same checks required on Mac, with Windows-native path handling only.
+
 ## Optional Obsidian on Windows
 
 After scaffolding, choose the **Windows** download on the [official download page](https://obsidian.md/download) if wanted, then install it using its normal Windows installer. Open Obsidian and choose **Open folder as vault → Open**, select the **created workstream vault folder**, and click **Open**. Open the project-name map note, Current State and Workstreams. If another vault is open, use **Open another vault** to reach the chooser. [Official opening instructions](https://obsidian.md/help/vault).

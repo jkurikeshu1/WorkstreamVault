@@ -6,7 +6,7 @@ Part of [[Jobs/Jobs]]. Use only for an assigned creation/adaptation. This proced
 2. Reuse current project contracts. Create only a map, agent contract, current-state/ownership note, plan registry/template, needed Jobs and handoff structure. Add actual workstream notes only when work exists. Keep private source material out.
 3. Separate observed truth, proposed architecture, approved scope and human acceptance. Latest uses explicit registry links, with immutable full snapshots when a plan is formally revisioned.
 4. Put the **architecture ambiguity review** in the local plan Job, proposal template and agent-entry instructions. Verify the routes are accessible inside this vault; avoid broken cross-vault links.
-5. Verify identity, renamed paths, links, optional catalog routes and the first real workstream. Read back created files. No application suite, provider call or automated reviewer is implied by setup.
+5. Verify identity, renamed paths, links, optional catalog routes and the first real workstream's stable ID/canonical vault ID. Follow [[Reference/Workstream Routing]] for verified local discovery and entry pointers within authorized scope; otherwise report pending installation. Read back created files. No application suite, provider call or automated reviewer is implied by setup.
 6. Record the meaningful setup handoff with what was created, checked and pending. Do not claim installation, enforcement or universal adoption from documents.
 
 ## Architecture ambiguity requirement

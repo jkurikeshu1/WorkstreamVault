@@ -24,7 +24,8 @@
     "Architecture/Architecture Guardrails.md",
     "Jobs/Onboard an Agent.md",
     "Reference/Shared Context.md",
-    "Reference/Conventions & Dev Workflow.md"
+    "Reference/Conventions & Dev Workflow.md",
+    "Reference/Workstream Routing.md"
   ],
   "routing": {
     "scope": "",
@@ -33,7 +34,7 @@
     "denyByDefault": [
       "credentials and secret values",
       "unrelated private records",
-      "raw communications and agent histories",
+      "raw communications and agent histories unless explicitly selected, permitted and sanitized through the indexing Job",
       "historical snapshots unless explicitly required",
       "unrelated projects",
       "live application data unless explicitly assigned"

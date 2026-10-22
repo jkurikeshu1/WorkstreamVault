@@ -13,7 +13,11 @@ These are ordinary Markdown and JSON files. Obsidian is optional. A file-capable
 
 ## Read order
 
-First verify the project, assignment and access using this map, [[AGENTS]] and the identity file. Before consequential work read:
+First verify the project, assignment and access using this map, [[AGENTS]] and the identity file.
+
+Resolve the canonical workstream through [[Reference/Workstream Routing]] before dependent work. A new agent/session reuses the same vault and stable workstream ID. For previous context use [[Jobs/Index an Existing Workstream]]; further authorized work maintains that same note and source coverage through [[Jobs/Update the Vault]].
+
+Before consequential work read:
 
 1. [[Current State]] — current objective, authority, stop, claims and locks.
 2. [[Architecture/Architecture Guardrails]] — current boundaries.

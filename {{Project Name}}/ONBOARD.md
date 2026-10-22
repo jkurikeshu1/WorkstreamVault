@@ -11,9 +11,12 @@ Separate repository, if applicable: {{Repo Path}}
 
 Assignment: read-only onboarding for <actual outcome>.
 Relevant workstream: <Workstreams/exact note name.md>.
+Stable workstream ID: <workstream_id from that note>.
 Stop: report readiness and missing context in chat; do not edit, claim, save a review, run tests or publish anything.
 
 Read the vault AGENTS.md, {{Project Name}}.md and project-context.json to verify identity, then follow the map's task read order: Current State, Architecture/Architecture Guardrails, the workstream and all Key files/dependencies, exact plan via the registry's Latest link if relevant, and the matching Job. Read Jobs/Onboard an Agent and Reference/Conventions & Dev Workflow. Repository work later requires that repository's own instructions and actual checkout verification.
+
+Read Reference/Workstream Routing.md and verify the workstream ID, canonical vault ID and any installed source-folder pointer/local discovery route. Reuse this same vault across future sessions. Future authorized work includes saving useful context/source coverage and a meaningful handoff here using Jobs/Update the Vault.md; this onboarding assignment itself remains read-only. Report unavailable routes or unsaved updates accurately.
 
 Verify the actual target OS and filesystem access. Windows and Mac have the same workflow; use Windows-native file tools/PowerShell for Windows, and Mac-native tools for macOS. Follow the portability rules in Conventions. Do not assume a cloud computer can access a supplied local path or require Unix tools on Windows.
 

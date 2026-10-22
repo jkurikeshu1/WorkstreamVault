@@ -18,6 +18,8 @@ Obsidian is optional. Open the vault folder in a text editor or give a file-capa
 
 Work is indexed through deliberate maintenance of the Workstreams and Daily Notes indexes and current canonical notes while authorized work is done. There is no watcher, automatic transcript capture or import of work outside this workflow.
 
+For prior context, follow [[Jobs/Index an Existing Workstream]]: link to originals by default, or retain explicitly selected sanitized history with provenance. Use [[Reference/Workstream Routing]] for stable IDs, the local record and authorized source-folder entry pointers. Subsequent authorized work updates that same canonical vault/note and source coverage; a new agent/session/branch does not create another context store. Report pending routes or unsaved context. Windows and Mac follow the same indexing, history-copy and continuity rules with native file operations.
+
 ## Windows and Mac: same workflow, native file operations
 
 The map, entry contract, workstreams, claims/locks, plans, ambiguity review, verification and handoffs have the same roles on Windows and macOS. Select the actual destination computer, independently of the chat/model host.

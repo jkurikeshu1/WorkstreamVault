@@ -4,6 +4,7 @@ Part of [[{{Project Name}}]]. Durable rules and definitions, linked rather than 
 
 - [[Reference/Conventions & Dev Workflow]] — locations, naming, assignment routes and verification.
 - [[Reference/Shared Context]] — canonical context, corrections and handoffs.
+- [[Reference/Workstream Routing]] — stable workstream IDs, local discovery, source-folder entry pointers and ongoing indexing.
 - [[Reference/Glossary]] — one meaning for vault terms.
 - [[Reference/Decision Log]] — settled cross-cutting choices and why.
 

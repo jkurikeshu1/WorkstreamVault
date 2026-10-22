@@ -4,6 +4,7 @@ Part of [[{{Project Name}}]]. Read Current State → guardrails → relevant wor
 
 - [[Jobs/Onboard an Agent]] — establish context, access, assignment route and stop.
 - [[Jobs/Update the Vault]] — save the useful delta in the right place.
+- [[Jobs/Index an Existing Workstream]] — import prior context by reference or selected history copies, then connect future work to its canonical vault.
 - [[Jobs/Create or Adapt a Project Vault]] — minimal setup and ambiguity-framework continuity.
 - [[Jobs/Parallel Workflow]] — claims, isolation, locks and collision handling.
 - [[Jobs/Propose or Review a Plan]] — Latest, immutable revisions, review and approval.
